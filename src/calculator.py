@@ -20,6 +20,17 @@ def multiply(a, b):
     result = a * b
     print(f"Result: {result}")
     return result
+def multiply(a, b):
+    """Multiply two numbers"""
+    return a * b
+def divide(a, b):
+    """Divide a by b"""
+    return a / b
+def multiply(a, b):
+    if not (isinstance(a, (int, float)) and isinstance(b, (int, float))):
+        raise TypeError("Both arguments must be numbers")
+    return a * b
+
 
 def divide(a, b):
     """Divide a by b with enhanced error handling."""
